@@ -14,5 +14,43 @@ h1 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 15px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  /* hiding loader */
+  /* display: block; */
+  display: none;
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image container */
+.imageContainer {
+  margin: 10px 29%;
+}
+.imageContainer img {
+  margin-top: px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Media query */
+@media screen and (max-width:600px)
+{
+  .imageContainer {
+    margin: 10px 16%;
+}
+}
+
